@@ -47,6 +47,7 @@ public class MaxTemperatureDriverTest {
     
     checkOutput(conf, output);
   }
+  
 /* checkOutput
  * @Para conf, configuration file
  * @Para output, output file path
