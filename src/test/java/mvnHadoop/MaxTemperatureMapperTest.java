@@ -3,6 +3,9 @@ package mvnHadoop;
 import java.io.IOException;
 import java.util.Arrays;
 
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.*;
 import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
 import org.apache.hadoop.mrunit.mapreduce.MapDriver;
@@ -45,4 +48,6 @@ public class MaxTemperatureMapperTest {
 						Arrays.asList(new IntWritable(10), new IntWritable(5)))
 				.withOutput(new Text("1950"), new IntWritable(10)).runTest();
 	}
+
+
 }
