@@ -13,6 +13,7 @@ OR
 % hadoop mvnHadoop.MaxTemperatureDriver -fs file:/// -jt local input/ncdc/micro output
 
 ```
+
 2. run on HDFS
 ```
 % mvn package -DskipTests
@@ -20,6 +21,7 @@ OR
 -conf conf/hadoop-localhost.xml airtemperature max-temp
 
 ```
+
 3. DEBUG
 ```
 % hadoop jar hadoop-examples.jar LoggingDriver -conf conf/hadoop-localhost.xml \
